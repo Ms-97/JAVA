@@ -16,7 +16,7 @@ public class Exercise05 {
 			for(int j=0; j<array[i].length; j++) {
 			sum = sum + array[i][j];
 			k++;
-			 }
+				}
 			}
 		
 		avg = (double) sum / k;

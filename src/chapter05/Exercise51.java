@@ -1,16 +1,15 @@
 package chapter05;
 
-public class Exercise04 {
+public class Exercise51 {
 	public static void main(String[] args) {
-		//int max =Integer.MAX_VALUE;
-		//int min =Integer.MIN_VALUE;
-	
-		int[] array = {1, 5, 3, 8, 2};
+		/*다음 배열에서 최댓값과 최솟값을 구하시오.
+		 {38, 94, 16, 3, 76, 94, 82, 47, 59, 8} */
+		
+		int[] array = {38, 94, 16, 3, 76, 94, 82, 47, 59, 8};
 		int max = array[0];
 		int min = array[0];
 		
-		for(int i=0; i<array.length; i++) {
-
+		for (int i = 0; i < array.length; i++) {
 			if (array[i] > max) {
 				max = array[i];
 			}
@@ -20,8 +19,8 @@ public class Exercise04 {
 			}
 		}
 		
+		
 		System.out.println("max: " + max);
 		System.out.println("min: " + min);
 	}
 }
-
