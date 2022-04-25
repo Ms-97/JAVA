@@ -3,6 +3,6 @@ package chapter06;
 public class Member {
 	String name;
 	String id;
-	String pw;
+	String password;
 	int age;
 }
