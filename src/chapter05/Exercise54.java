@@ -13,29 +13,30 @@ public class Exercise54 {
 		int count=0;
 		
 		for(int i=0; i<10000; i++) {
-		 int ranNum = random.nextInt(6)+1;
+		 int ranNum = random.nextInt(6);
+		  // dice[random_nextInt(6)]++;
 		 	
-		 	if (ranNum == 1) {
+		 	if (ranNum == 0) {
 		 		count = dice[0];
 		 		dice[0] = ++count;
 			}
-			else if (ranNum == 2) {
+			else if (ranNum == 1) {
 				count = dice[1];
 		 		dice[1] = ++count;
 			}
-			else if (ranNum == 3) {
+			else if (ranNum == 2) {
 				count = dice[2];
 		 		dice[2] = ++count;
 			}
-			else if (ranNum == 4) {
+			else if (ranNum == 3) {
 				count = dice[3];
 		 		dice[3] = ++count;
 			}
-			else if (ranNum == 5) {
+			else if (ranNum == 4) {
 				count = dice[4];
 		 		dice[4] = ++count;
 			}
-			else if (ranNum == 6) {
+			else if (ranNum == 5) {
 				count = dice[5];
 		 		dice[5] = ++count;
 			}
