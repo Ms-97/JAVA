@@ -12,5 +12,8 @@ public class MemberExample {
 		
 		System.out.println("이름: "+member1.name+ "\n나이: "+ member1.age);
 		System.out.println("이름: "+member2.name+ "\n나이: "+ member2.age);
+		
+		Member mem3 = new Member("도길홍", 32);
+		System.out.println("이름: "+mem3.name+ "\n나이: "+ mem3.age);
 	}
 }
