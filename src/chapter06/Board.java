@@ -8,18 +8,18 @@ public class Board {
 	String date = null;
 	int hitcount = 0;
 	
-	Board(String title, String content){
+	public Board(String title, String content){
 		this(title, content, null, null, 0);
 	}
-	Board(String title, String content,String writer){
+	public Board(String title, String content,String writer){
 		this(title, content, writer, null, 0);
 	}
 	
-	Board(String title, String content,String writer, String date){
+	public Board(String title, String content,String writer, String date){
 		this(title, content, writer, date, 0);
 	}
 	
-	Board(String title, String content,String writer, String date,int hitcount){
+	public Board(String title, String content,String writer, String date,int hitcount){
 		this.title = title;
 		this.content = content;
 		this.writer = writer;
