@@ -2,25 +2,23 @@ package chapter06.classroomExample;
 
 public class Circle {
 
-	double radius;
-	double x;
-	double y;
+	private double radius;
+	private double x;
+	private double y;
 	
-	Circle(){}
+	public Circle(){}
 	
-	double getRadius(){
+	public double getRadius(){
 	   return radius;
 	}
 	
 	public void setRadius(double radius) {
-		if(radius < 0) {
-			this.radius = 0;
-		}else {
+		if(radius > 0) {
 		this.radius = radius;
 		}
 	}
 	
-	double getX(){
+	public double getX(){
 		   return x;
 		}
 	
@@ -28,20 +26,15 @@ public class Circle {
 		this.x = x;
 	}
     
-	double getY(){
+	public double getY(){
 		   return y;
-		}
+	}
 	
 	public void setY(double y) {
 		this.y = y;
 	}
 	
-	double getArea(){
-		double area = Math.PI * radius * radius;
-		return area;
-		}
-
-		
-	
-
+	public double getArea(){
+		return Math.PI * radius * radius;
+	}
 }

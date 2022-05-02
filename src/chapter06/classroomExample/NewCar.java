@@ -5,22 +5,20 @@ public class NewCar {
 	private String color;
 	private static final double MAX_SPEED = 200/1.6;
 	
-	NewCar() {
+	public NewCar() {
 		
 	}
 	
-	NewCar(String color) {	
+	public NewCar(String color) {	
 	this.color = color;
 	}
 	
 	public double getSpeed() {
-		double speed = mileToKillo(this.speed);
-		return speed;
-		
-	}
+		return mileToKillo(speed);
 	
+	}
 	public void setSpeed(double speed) {
-		this.speed = speed;
+		this.speed = killoToMile(speed);
 	}
 	
 	public String getColor() {
@@ -32,15 +30,14 @@ public class NewCar {
 	}
 	
 	public boolean speedUp(double speed) {
-		double Mile = killoToMile(speed);
-		if( Mile > 0.0 &&  Mile < MAX_SPEED) {
-			this.speed +=  Mile;
+		speed = killoToMile(speed);
+		if (this.speed + speed >= 0 && this.speed + speed <= MAX_SPEED) {
+			this.speed += speed;
 			return true;
-		}else {
-			 Mile = this.speed;
-		 	return false;
-		}
+		} 
+			return false;
 	}
+	
 	public static double getMaxSpeed() {
 		 return MAX_SPEED;
 	}

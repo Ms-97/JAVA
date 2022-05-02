@@ -16,9 +16,9 @@ public class PlaneTest {
 		System.out.println();
 
 		Plane plane3 = new Plane();
-		plane3.setManufacturer("룩히트 마틴");
+		plane3.setManufacturer("록히트 마틴");
 		plane3.setModel("f-22");
-		plane3.setMaxNumberOfPassengers(-10);
+		plane3.setMaxNumberOfPassengers(-10); // 잘못된 값이 나오면 0으로 반환(-포함)
 
 		System.out.println("제조사: " + plane3.getManufacturer());
 		System.out.println("모델명: " + plane3.getModel());
@@ -29,5 +29,4 @@ public class PlaneTest {
 
 	}
 
-	
 }
