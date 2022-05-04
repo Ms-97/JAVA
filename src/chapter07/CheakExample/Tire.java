@@ -1,4 +1,4 @@
-package CheakExample;
+package chapter07.CheakExample;
 
 public class Tire {
 	public void run() {

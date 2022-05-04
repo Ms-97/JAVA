@@ -1,4 +1,4 @@
-package CheakExample;
+package chapter07.CheakExample;
 
 public class SnowTireExample {
 	public static void main(String[] args) {
