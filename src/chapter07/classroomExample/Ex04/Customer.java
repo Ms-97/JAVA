@@ -39,3 +39,4 @@ public class Customer {
 		return String.format("이름: " + firstName + " " + lastName + ", 계좌의 갯수: " + numberOfAccounts);
 	}
 }
+
