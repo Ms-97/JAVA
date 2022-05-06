@@ -19,7 +19,7 @@ public class CheckingAccount extends BankAccount {
 			balance -= balance;
 			return true;
 		} else {
-			
+			this.balance -= amount;
 			return false;
 			
 		}
