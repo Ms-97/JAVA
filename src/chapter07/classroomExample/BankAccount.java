@@ -20,6 +20,11 @@ public class BankAccount {
 		return true;
 	}else {
 		return false;
+		
+		/*
+		 * balance -= amount;
+		   return true;
+		*/
 		}
 	}
 	public boolean transfer(int amount, BankAccount otherAccount) {
@@ -29,6 +34,10 @@ public class BankAccount {
 			this.balance -= amount;
 			otherAccount.balance += this.balance;
 			return false;
+			/* withdraw(amount);
+			otherAccount.deposit(amount);
+			return true;
+			*/
 			}
 	}
 }

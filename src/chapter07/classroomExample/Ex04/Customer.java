@@ -22,8 +22,7 @@ public class Customer {
 	}
 	
 	public void addAccount(BankAccount account) {
-		accounts[numberOfAccounts] = account;
-		numberOfAccounts++;
+		accounts[numberOfAccounts++] = account;
 	}
 	
 	public BankAccount getAccount(int index) {

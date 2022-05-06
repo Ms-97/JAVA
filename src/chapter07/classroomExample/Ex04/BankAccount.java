@@ -34,6 +34,7 @@ public class BankAccount {
 		}
 	}
 	public String toString() {
-		return String.format("현재잔액: " + balance);
+		return String.format("현재잔액: %,d", balance);
+		//return String.format("현재잔액: " + balance);
 	}
 }

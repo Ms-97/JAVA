@@ -9,7 +9,7 @@ public class SavingsAccount extends BankAccount {
 	}
 	
 	public void updateBalance(int period) {
-		this.balance += balance * interestRate * period;
+		balance += balance * interestRate * period;
 	}
 }
 	

@@ -5,11 +5,9 @@ public class CheckingAccount extends BankAccount {
 	
 	public CheckingAccount(int balance) {
 		super(balance);
-		this.balance = balance;
 	}
 	public CheckingAccount(int balance, SavingsAccount protectedBY) {
 		super(balance);
-		this.balance = balance;
 		this.protectedBY = protectedBY;
 	}
 	@Override
@@ -17,12 +15,19 @@ public class CheckingAccount extends BankAccount {
 		if (balance < amount) {
 			protectedBY.balance -= (amount - balance);
 			balance -= balance;
-			return true;
 		} else {
-			this.balance -= amount;
-			return false;
-			
+			this.balance -= amount;		
 		}
+		return true;
+		
+		/*if (amount > balance) {
+			protectedBy.withdraw(amount - balance);
+			balance = 0;
+		} else {
+			super.withdraw(amount);
+		}
+		return true;
+		*/
 	}
 }
 

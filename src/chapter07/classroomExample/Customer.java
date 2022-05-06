@@ -34,6 +34,6 @@ public class Customer {
 
 
 	public String toString() {
-		return String.format("이름: "+firstName+" "+lastName+", 잔고: "+account.getBalance()+"원");
+		return String.format("이름: %s %s, 잔고: %,d원", firstName, lastName, account.getBalance());
 	}
 }
