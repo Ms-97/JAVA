@@ -1,4 +1,4 @@
-package chapter08.classroomExample.Bank;
+package chapter10.classroomExample.Bank;
 
 public class CheckingAccount extends BankAccount {
 	private SavingsAccount protectedBY;
